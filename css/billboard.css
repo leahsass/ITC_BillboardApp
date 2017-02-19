@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Pinyon+Script|Poiret+One');
+
+/*font-family: 'Poiret One', cursive; (Date)
+font-family: 'Anton', sans-serif; (H1)
+font-family: 'Pinyon Script', cursive; (Signature)
+font-family: 'Arial', sans-serif; (Body)*/
+
+
+
+/* ----mobile---- */
+/*p .page-title {
+    font-family: 'Anton', sans-serif;
+    color: #000000;
+    font-size: _px;
+}
+
+
+p .no-messages {
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    font-size: _px;
+}
+
+
+p .date {
+    font-family: 'Poiret One', cursive;
+    color: #000000;
+    font-size: _px;
+}
+
+
+p .blog-title {
+    font-family: 'Anton', sans-serif;
+    color: #00b7ef;
+    font-size: _px;
+}
+
+
+p .blog-text {
+    font-family: 'Arial', sans-serif;
+    color: #c1bfc0;
+    font-size: _px;
+}
+
+
+p .signature {
+    font-family: 'Pinyon Script', cursive;
+    color: #000000;
+    font-size: _px;
+}*/
+
+
+
+
+
+/* ----desktop---- */
+/*@media only screen and (min-width: 768px) {*/
+
+
+.blue-box {
+    max-width: 800px;
+    height: auto;
+    border: 3px solid #00b7ef;
+}
+
+.page-title {
+    font-family: 'Anton', sans-serif;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.no-messages {
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.blog-title {
+    font-family: 'Anton', sans-serif;
+    color: #00b7ef;
+    font-size: 30px;
+}
+
+
+.blog-text {
+    font-family: 'Arial', sans-serif;
+    color: #c1bfc0;
+    font-size: 16px;
+}
+
+
+.signature {
+    font-family: 'Pinyon Script', cursive;
+    color: #000000;
+    font-size: 24px;
+}
+
+
+.add-message {
+    border: 1px dashed #000000;
+    max-width: 800px;
+}
+
+
+.add-msg-btn {
+    width: 10%;
+    height: 90%;
+    font-size: 16px;
+    background-color: #66cdaa;
+    color: #FFFFFF;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    margin: 5px auto;
+}
+
+
+.cancel-btn {
+    width: 10%;
+    height: 90%;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: #FFFFFF;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    margin: 5px 2px;
+    display: inline-block;
+}
+
+
+.confirm-btn {
+    width: 10%;
+    height: 90%;
+    font-size: 16px;
+    background-color: #66cdaa;
+    color: #FFFFFF;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    margin: 5px 2px;
+    display: inline-block;
+}
+
+
+.btn-container {
+    text-align: center;
+}
+
+
+.new-blog-entry {
+    max-width: 800px;
+    height: auto;
+    border: 3px dashed #00b7ef;
+}
+
+
+.date {
+    font-family: 'Poiret One', cursive;
+    color: #000000;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: -10px;
+}
+
+
+.title-input {
+    width: 90%;
+    float: left;
+}
+
+
+.blog-input {
+    height: 100px;
+    width: 90%;
+}
+
+
+.author-input {
+
+}
+
+
+/*}*/
