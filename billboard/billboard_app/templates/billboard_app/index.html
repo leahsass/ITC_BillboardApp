@@ -24,20 +24,18 @@
 
         {% if post_list %}
 
-
-		<div id="post-list" class="blue-box">
-
 		{% for entry in post_list %}
 
-			<div class="date"> {{ entry.published_date }} </div>
+            <div class="date"> {{ entry.published_date }} </div>
+            <div id="post-list" class="blue-box">
+
 			<div class="blog-title"> {{ entry.title }} </div>
 			<div class="blog-text"> {{ entry.text }} </div>
 			<div class="signature"> {{ entry.author }} </div>
 
+            </div>
+
 		{% endfor %}
-
-		</div>
-
 
 		{% else %}
 
@@ -56,28 +54,26 @@
         </div>
     </div>
 
-        <form id="new-msg-entry-form" action="/new-post/" method="POST">
-        <div class="new-blog-entry">
+        <form id="new-msg-entry-form" action="/billboard/new_post/" method="POST">
 
-            <div class="date"></div>
-            <input class="title-input" name="title" type="text" placeholder="Title" value="" />
-            <textarea class="user-input" name="user-input" placeholder="Your message here" value=""></textarea>
-            <input class="author-input" name="author" type="text" placeholder="Author" value="" />
+            {% csrf_token %}
 
-        </div>
-    </form>
+            <div class="new-blog-entry">
+                {{ form.as_p }}
+            </div>
+
+{#        <input type="submit" value="Submit" />#}
+
+{#    </form>#}
 
 
     <div id="confirm-message">
         <div class="btn-container">
-            <div class="cancel-btn">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </div>
-            <div class="confirm-btn">
-                <i type="submit" class="fa fa-check" aria-hidden="true"></i>
-            </div>
+            <div class="cancel-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="confirm-btn"><input class="input" type="submit" /><i class="fa fa-check" aria-hidden="true"></i></div>
         </div>
     </div>
+        </form>
 
 
 </div>

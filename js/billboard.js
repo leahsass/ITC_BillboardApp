@@ -2,10 +2,11 @@ var Billboard = {};
 
 
 Billboard.newMessage = function () {
-    $(".add-msg-btn").hide();
+    $("#no-messages").hide();
+    $("#add-message").hide();
 
-    $(".new-msg-entry-form").show();
-    $(".btn-container").show();
+    $("#new-msg-entry-form").show();
+    $("#confirm-message").show();
     
 };
 
@@ -13,8 +14,8 @@ Billboard.newMessage = function () {
 Billboard.start = function () {
     $(document).ready(function () {
         $(".add-msg-btn").click(Billboard.newMessage);
-        $(".new-msg-entry-form").hide();
-        $(".btn-container").hide();
+        $("#new-msg-entry-form").hide();
+        $("#confirm-message").hide();
     });
 };
 

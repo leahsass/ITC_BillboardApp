@@ -16,17 +16,17 @@
 <div class="main">
 
 
-    <div class="headline">
+    <div id="headline">
         <p class="page-title">BILLBOARD</p>  
     </div>
 
 
-    <div class="no-messages">
+    <div id="no-messages">
         <p class="no-messages">No messages...<br/>Click the '+' to button to add a new message.</p>
     </div>
 
 
-    <div class="add-message">
+    <div id="add-message">
         <div class="add-msg-btn">
             <div class="hvr-pulse-grow">
                 <i class="fa fa-plus" aria-hidden="true"></i>
@@ -35,25 +35,22 @@
     </div>
 
 
-    <form class="new-msg-entry-form" method="POST">
+    <form id="new-msg-entry-form" action="" method="POST">
         <div class="new-blog-entry">
 
             <div class="date"></div>
-            <div class="title-input">
-                <input name="title" type="text" placeholder="Title" value="" /> 
-            </div>
-            <div class="blog-input">
-                <input name="blog" type="textarea" placeholder="Your message here" value="" /> 
-            </div>
-            <div class="author-input">
-                <input name="author" type="text" placeholder="Author" value="" /> 
-            </div>
+
+            <input class="title-input" name="title" type="text" placeholder="Title" value="" />
+
+            <textarea class="user-input" name="user-input" placeholder="Your message here" value=""></textarea>
+
+            <input class="author-input" name="author" type="text" placeholder="Author" value="" />
 
         </div>
     </form>
 
 
-    <div class="add-message">
+    <div id="confirm-message">
         <div class="btn-container">
             <div class="cancel-btn">
                 <i class="fa fa-times" aria-hidden="true"></i>

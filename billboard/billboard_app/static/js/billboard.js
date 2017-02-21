@@ -1,11 +1,6 @@
 var Billboard = {};
 
 
-Billboard.postMessage = function () {
-
-
-};
-
 
 Billboard.newMessage = function () {
     $("#no-messages").hide();
@@ -14,9 +9,19 @@ Billboard.newMessage = function () {
     $("#new-msg-entry-form").show();
     $("#confirm-message").show();
 
-    $(".confirm-btn").click(Billboard.postMessage);
+    $(".cancel-btn").click(Billboard.cancelMessage);
     
 };
+
+
+
+Billboard.cancelMessage = function () {
+    $("#add-message").show();
+    $(".add-msg-btn").click(Billboard.newMessage);
+    $("#new-msg-entry-form").hide();
+    $("#confirm-message").hide();
+};
+
 
 
 Billboard.start = function () {
@@ -26,6 +31,7 @@ Billboard.start = function () {
         $("#confirm-message").hide();
     });
 };
+
 
 
 Billboard.start();

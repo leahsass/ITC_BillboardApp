@@ -57,13 +57,7 @@ p .signature {
 /*@media only screen and (min-width: 768px) {*/
 
 
-.blue-box {
-    max-width: 800px;
-    height: auto;
-    border: 3px solid #00b7ef;
-}
-
-.page-title {
+#headline {
     font-family: 'Anton', sans-serif;
     color: #000000;
     font-size: 40px;
@@ -71,7 +65,7 @@ p .signature {
 }
 
 
-.no-messages {
+#no-messages {
     font-family: 'Arial', sans-serif;
     color: #000000;
     font-size: 24px;
@@ -79,30 +73,18 @@ p .signature {
 }
 
 
-.blog-title {
-    font-family: 'Anton', sans-serif;
-    color: #00b7ef;
-    font-size: 30px;
-}
 
 
-.blog-text {
-    font-family: 'Arial', sans-serif;
-    color: #c1bfc0;
-    font-size: 16px;
-}
 
 
-.signature {
-    font-family: 'Pinyon Script', cursive;
-    color: #000000;
-    font-size: 24px;
-}
 
 
-.add-message {
+
+
+#add-message {
     border: 1px dashed #000000;
     max-width: 800px;
+    margin: 10px auto;
 }
 
 
@@ -117,6 +99,112 @@ p .signature {
     padding: 5px;
     text-align: center;
     margin: 5px auto;
+}
+
+
+
+
+
+
+
+
+
+
+.new-blog-entry {
+    max-width: 800px;
+    height: auto;
+    border: 3px dashed #00b7ef;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+
+.date {
+    font-family: 'Poiret One', cursive;
+    color: #000000;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: -10px;
+    /*background-color: #FFFFFF;*/
+}
+
+
+.title-input {
+    float: left;
+    margin: 30px 10px 5px 10px;
+}
+
+
+textarea {
+    height: 100px;
+    margin: 5px 10px;
+	width: 95%; 
+}
+
+
+.author-input {
+    float: right;
+    position: relative;
+    margin: 5px 10px 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.blue-box {
+    max-width: 800px;
+    height: auto;
+    border: 3px solid #00b7ef;
+    margin: 10px auto;
+}
+
+
+.blog-title {
+    font-family: 'Anton', sans-serif;
+    color: #00b7ef;
+    font-size: 30px;
+    float: left;
+    margin: 30px 10px 5px 10px;
+}
+
+
+.blog-text {
+    font-family: 'Arial', sans-serif;
+    color: #c1bfc0;
+    font-size: 16px;
+    margin: 5px 10px;
+	width: 95%;
+}
+
+
+.signature {
+    font-family: 'Pinyon Script', cursive;
+    color: #000000;
+    font-size: 24px;
+    float: right;
+    position: relative;
+    margin: 5px 10px 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+#confirm-message {
+    border: 1px dashed #000000;
+    max-width: 800px;
+    margin: 10px auto;
 }
 
 
@@ -155,37 +243,7 @@ p .signature {
 }
 
 
-.new-blog-entry {
-    max-width: 800px;
-    height: auto;
-    border: 3px dashed #00b7ef;
-}
 
-
-.date {
-    font-family: 'Poiret One', cursive;
-    color: #000000;
-    font-size: 16px;
-    margin-left: 5px;
-    margin-top: -10px;
-}
-
-
-.title-input {
-    width: 90%;
-    float: left;
-}
-
-
-.blog-input {
-    height: 100px;
-    width: 90%;
-}
-
-
-.author-input {
-
-}
 
 
 /*}*/
