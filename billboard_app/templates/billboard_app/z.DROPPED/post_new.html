@@ -1,0 +1,30 @@
+{% extends 'billboard_app/base.html' %}
+
+
+{% block content %}
+    <form id="new-msg-entry-form" action="" method="POST">
+
+    {% csrf_token %}
+
+        <div class="new-blog-entry">
+
+            <div class="date"></div>
+            <input class="title-input" name="title" type="text" placeholder="Title" value="" />
+            <textarea class="user-input" name="user-input" placeholder="Your message here" value=""></textarea>
+            <input class="author-input" name="author" type="text" placeholder="Author" value="" />
+
+        </div>
+    </form>
+
+    <div id="confirm-message">
+        <div class="btn-container">
+            <div class="cancel-btn">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="confirm-btn">
+                <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

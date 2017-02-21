@@ -1,0 +1,26 @@
+{% extends 'billboard_app/base.html' %}
+
+
+{% block content %}
+
+    {% for post in posts %}
+
+        <div>
+
+            <p>{{ post.title }}</p>
+            <p>{{ post.text }}</p>
+            <p>{{ post.author }}</p>
+
+        </div>
+
+    {% endfor %}
+
+    <div id="add-message">
+        <div class="add-msg-btn">
+            <div class="hvr-pulse-grow">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
