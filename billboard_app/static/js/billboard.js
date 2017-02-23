@@ -26,6 +26,7 @@ Billboard.cancelMessage = function () {
 
 Billboard.start = function () {
     $(document).ready(function () {
+        // $("#login").show()
         $(".add-msg-btn").click(Billboard.newMessage);
         $("#new-msg-entry-form").hide();
         $("#confirm-message").hide();
