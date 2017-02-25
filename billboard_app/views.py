@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import Post
-from .forms import PostForm
+from .forms import PostForm, UserForm
 from django.utils import timezone
 from django.contrib.auth import authenticate, login
 from django.views import generic
@@ -34,26 +34,17 @@ def new_post(request):
 
 
 
-# class UserFormView(View):
-#     form_class = UserForm
-#     # html file that form is included in
-#     template_name = 'billboard_app/index.html' # new template?
-#
-#     # display blank form for new user
-#     def get(self, request):
-#         form = self.form_class(None)
-#         return render(request, self.template_name, {'form': form})
-#
-#     # process form database
-#     def post(self, request):
-#         form = self.form_class(request.POST)
-#
-#         if form.is_valid():
-#             user = form.save(commit=False)
-#
-#             # get cleaned data (data that is formatted properly
-#             username = form.cleaned_data['username']
-#             password = form.cleaned_data['password']
-#             user.set_password(password)
-#             user.save()
-#             return redirect('index')
+def register(request):
+    if request.method == "POST":
+        user_form = UserForm(request.POST)
+        if user_form.is_valid():
+            user = user_form.save(commit=False)
+            user.set_password(user.password)
+            user.save()
+    else:
+        new_form = UserForm()
+    return render(request, 'billboard_app/login.html', {'new_form': form})
+
+
+
+def user_login(request):

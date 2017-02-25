@@ -25,7 +25,33 @@
 
 
 
-    <div id="login">
+    <form id="user-register" action="/billboard/register/" method="POST">
+
+    {% csrf_token %}
+
+        <div class="register-form">
+            {{ form.as_p }}
+        </div>
+
+
+        <div id="confirm-register">
+            <div class="btn-container">
+                <div class="cancel-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+                <div class="confirm-btn"><input class="input" type="submit" /><i class="fa fa-check" aria-hidden="true"></i></div>
+            </div>
+        </div>
+    </form>
+
+
+
+    <div id="login-page">
+        <div id="login-buttons">
+            <div class="btn-container">
+                <div class="login-btn"><input class="input" type="submit" />LOGIN</div>
+                <div class="register-btn"><input class="input" type="submit" />REGISTER</i></div>
+            </div>
+        </div>
+
         {% if user.is_authenticated %}
             <a href="{% url 'new_post' %}" class="top-menu"></span></a>
             <p class="top-menu">Hello {{ user.username }}
