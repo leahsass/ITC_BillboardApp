@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import Post
-from .forms import PostForm, UserForm
+from .forms import PostForm
 from django.utils import timezone
 from django.contrib.auth import authenticate, login
 from django.views import generic
